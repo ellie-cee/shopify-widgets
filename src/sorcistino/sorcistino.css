@@ -1,0 +1,42 @@
+.sorcistino-holder {
+    min-width: 80vw;
+  }
+  .sorcistino-nav-holder {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 8px;
+  }
+  
+  .sorcistino-holder .rebuy {
+    width:100%;
+  }
+  
+  @media screen and (max-width:762px) {
+    .sorcistino-holder {
+      min-width: 100vw;
+    }
+  }
+  @media screen and (max-width:762px) {
+    .sorcistino-holder {
+      min-width: 100vw;
+    }
+  }
+  .sorcistino-holder .progress {
+    width: 95%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .sorcistino-holder .progress-bar-wrapper {
+      position: relative;
+      height:22px;
+      width:100%;
+      margin:27px auto;
+      background: #fff;
+      border-radius: 30px;
+      padding:0;
+      overflow:hidden;
+      max-width:100%;
+  }

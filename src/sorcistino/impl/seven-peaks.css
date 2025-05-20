@@ -1,0 +1,228 @@
+.fence-builder .sorcistino-header {
+    display: none;
+  }
+  
+  .srd-fencebuilder {
+    margin-left: 72px;
+    margin-right:72px;
+    margin-bottom: 36px;
+    width:100%;
+  }
+  
+  .srd-fencebuilder button {
+    width: fit-content;
+  }
+  
+  .panels.fence-builder {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width:90%;
+    
+    gap: 43px;
+  }
+  
+  .srd-fencebuilder .nav {
+    margin-top:13px;
+    border-top: 1px solid #801B1F;
+    padding-top:13px;
+  }
+  
+  .srd-fencebuilder .product-selector-radio {
+    display:none;
+  }
+  
+  .listing {
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .srd-fencebuilder .product-selection-row {
+    border-radius: 10px;
+    padding:9px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .srd-fencebuilder .product-selection-row:has(input:checked), .srd-fencebuilder .product-selection-row:hover {
+    border: 3px solid #000;
+    box-shadow: 0px 0px 20px 0px #00000080;
+  
+  }
+  
+  
+  .srd-fencebuilder .product-selection-row .product-image {
+    width: 105px;
+    height:93px;
+  }
+  
+  .srd-fencebuilder .product-selection-row .product-title {
+    color:#801B1F; 
+  }
+  
+  
+  .srd-fencebuilder .nav  button:disabled {
+    display:none;
+    
+  }
+  
+  .srd-fencebuilder h3 {
+    margin:0px;
+    padding-bottom:27px;
+  }
+  
+  .panels.fence-builder .statistics {
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    margin-top: 18px;
+  }
+  .panels.fence-builder .statistics-row {
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+    
+  }
+  .panels.fence-builder .statistics-row div:first-of-type {
+    font-family: neue-aachen-pro;
+  } 
+  .panels.fence-builder .statistics-row div:last-of-type {
+    text-align:right;
+  }
+  
+  .panels.fence-builder .final-summary .statistics {
+    width:max-content;
+  }
+  .final-summary .items-category-label {
+    font-size: 24px;
+  }
+  .panels.fence-builder .basket {
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .panels.fence-builder .line-item {
+    border-radius: 10px;
+    padding:9px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    border: 1px solid #000;
+  }
+  .final-basket .line-item {
+    flex-direction:column;
+  }
+  
+  
+  .final-basket {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: fit-content;
+    justify-content: space-around;
+    margin-top:32px;
+  }
+  
+  .final-basket .items-category-label {
+    font-size:24px;
+  }
+  .final-actions {
+    margin-top:16px;
+    padding-top:16px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+  .border-bottom {
+    border-bottom:1px solid #801B1F;
+  }
+  .border-top {
+    border-top:1px solid #801B1F;
+  }
+  .final-actions .cart-total-display {
+    font-size: 32px;
+    font-family: neue-aachen-pro,sans-serif;
+    font-weight: 400;
+  }
+  .final-basket .line-items {
+    display:flex;
+    gap: 24px;
+  }
+  
+  
+  
+  .panels.fence-builder .line-item .product-image {
+    width: 105px;
+    height:93px;
+  }
+  
+  .panels.fence-builder .line-item .product-title {
+    color:#801B1F;
+  }
+  
+  .srd-fencebuilder .nav {
+    margin-top:13px;
+    border-top: 1px solid #801B1F;
+    padding-top:13px;
+  }
+  
+  .panels.fence-builder .screen-summary {
+    display: flex;
+    flex-direction: column;
+    
+    align-content: flex-start;
+    width:30%
+  }
+  .panels.fence-builder .screen-content {
+    display: flex;
+    flex-direction: column;
+    
+    align-content: flex-start;
+    width:70%
+  }
+  .panels.fence-builder .screen-summary.final {
+    display:none;
+  }
+  .panels.fence-builder .screen-content.final {
+    width:100%;
+  }
+  
+  
+  .panels.fence-builder .summary-header {
+    border-bottom: 1px solid #801B1F;
+  
+  }
+  .srd-fencebuilder .srd-quantity .wrapper {
+    border: none;
+  }
+  .srd-fencebuilder .srd-quantity .wrapper {
+    border: none;
+  }
+  .srd-fencebuilder .srd-quantity .quantity-input {
+    display: none;
+  }
+  .srd-fencebuilder .items-category-label {
+    font-family: neue-aachen-pro,sans-serif;
+  }
+  .srd-fencebuilder .item-details {
+    margin-top: 8px;
+    display:flex;
+    justify-content: space-between;
+  }
+  .srd-fencebuilder .srd-quantity label {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-left: 8px;
+    padding-right:8px;
+  }
+  .srd-fencebuilder .srd-quantity .plus, .srd-fencebuilder .srd-quantity .minus {
+    border-radius: 100%;
+    border: 1px solid #000;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    width:24px;
+    height: 24px;
+  } 
