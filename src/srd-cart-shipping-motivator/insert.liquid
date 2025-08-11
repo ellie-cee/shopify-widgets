@@ -1,0 +1,16 @@
+{% if settings.motivator_enabled %}
+    {{ "CnRShippingMotivator.js" | asset_url | script_tag }}
+  {{ "CnRShippingMotivator.css" | asset_url | stylesheet_tag }}
+  <div class="cnr-shipping-motivator-holder"></div>
+   <script>
+    const motivator= new CnRShippingMotivator({
+      shipping_threshold:{{ settings.motivator_shipping_threshold}},
+      shipping_text:"{{ settings.motivator_shipping_text}}",
+      shipping_met_text:"{{ settings.motivator_shipping_met_text }}",
+      gwp_enabled: {{ settings.motivator_gwp_enabled}},
+      gwp_threshold: {{ settings.motivator_gwp_threshold}},
+      gwp_text:"{{ settings.motivator_gwp_text}}",
+      gwp_met_text:"{{ settings.motivator_gwp_met_text }}"
+    });
+  </script>
+  {% endif %}

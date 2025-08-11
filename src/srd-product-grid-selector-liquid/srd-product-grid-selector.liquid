@@ -1,0 +1,13 @@
+<div class="cnr-product-grid-selector" data-product-id="{{ product.id }}">
+  <input type="hidden" name="id" class="cnr-product-grid-variant-id product-variant-id" value="{{ product.variants[index].id }}"/>
+  <div class="header h5">{{ product.variants[index].title | split:"(" | first }}</div>
+  <div class="options-holder">
+    <ul class="options">
+    {% for variant in product.variants %}
+      <li class="option-item h5 {% unless variant.available %}disabled{%  endunless %}" data-variant-id="{{ variant.id }}" data-product-id="{{ product.id }}" data-variant-id="{{ variant.id }}" data-title="{{ variant.title | split:"(" | first }}">
+        {{ variant.title }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

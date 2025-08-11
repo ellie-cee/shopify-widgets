@@ -1,0 +1,30 @@
+{
+    "type":"c_and_r_widget",
+    "name":"C+R Subscription Widget",
+    "settings":[
+      {
+        "type":"text",
+        "id":"form_selector",
+        "label":"Form CSS Selector",
+        "default":"[data-type='add-to-cart-form']"
+      },
+      {
+        "type":"text",
+        "id":"subscription_label",
+        "label":"Subscription Option Text",
+        "default":"Subscribe & save"
+      },
+      {
+        "type":"text",
+        "id":"onetime_label",
+        "label":"One-time Option Text",
+        "default":"One-time purchase"
+      },
+      {
+        "type":"checkbox",
+        "id":"default_to_subscription",
+        "label":"Default to Subscription",
+        "default":true
+      }
+    ]
+  }

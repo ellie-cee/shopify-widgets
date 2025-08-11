@@ -1,0 +1,45 @@
+.srd-sc-discount-code-button, .srd-sc-discount-code-input {
+    color: #c6c6c6;
+    background-color: #fff;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    font-family: var(--primary-font-black);
+    font-weight: 900;
+    font-size: 1.6rem;
+    line-height: 1;
+    letter-spacing: .04px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: .2s all ease-in-out;
+}
+.srd-sc-discount-code-input {
+    width: 70%;
+}
+.srd-sc-discount-code-button:hover,.srd-sc-discount-code-button.active {
+
+    background-color: var(--color-primary-button-bg);
+    border-color: var(--color-primary-button-border);
+
+}
+.srd-sc-discount-code-input::placeholder {
+    opacity:0.60;
+  font-style:italic;
+  text-transform:smaller
+}
+.srd-sc-discount-code-button {
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.srd-sc-discount-code-wrapper {
+    display:flex;
+    flex-direction: row;
+    gap: 12px;
+    background-color: #F2ECE5;
+    margin-bottom:8px;
+
+}

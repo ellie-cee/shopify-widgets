@@ -1,0 +1,97 @@
+.srd-gift-note-cart-trigger {
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+}
+.srd-gift-note-cart-trigger a {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+.srd-gift-note-cart-form {
+    width: 100%;
+    color: #fff;
+    background: #004656;
+    bottom: 0;
+    transform: translateY(200%);
+    position: fixed;
+    transition: all 0.2s ease-in;
+    z-index: 999;
+    height: 80vh;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.4);
+    border-radius: none;
+    outline: 0;
+    left: 0;
+}
+@media (min-width: 768px) {
+    .srd-gift-note-cart-form {
+        left: 25px;
+        right: 25px;
+        width: calc(100% - 50px);
+    }
+}
+.srd-gift-note-cart-form textarea {
+    width: 100%;
+    padding: 1em;
+    display: block;
+    border-bottom: 5px solid #0082a7;
+    margin-top: 1em;
+    height: 20vh;
+    resize: none;
+}
+.cart-gift-message.active .srd-gift-note-cart-form {
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+.srd-gift-note-cart-active-content {
+    display: none;
+}
+.srd-gift-note-cart-active-content .display-6 {
+    font-size: 1em;
+}
+.srd-gift-note-cart-active-content p {
+    margin-bottom: 4px;
+    font-size: 0.7em;
+}
+.srd-gift-note-cart-clear {
+    display: none;
+}
+.srd-gift-note-cart-active-content a {
+    font-size: 0.7em;
+}
+.cart-gift-message.has-message .srd-gift-note-cart-active-content,
+.cart-gift-message.has-message .srd-gift-note-cart-clear {
+    display: block;
+}
+.cart-gift-message.has-message .srd-gift-note-cart-trigger {
+    display: none;
+}
+.srd-gift-note-cart-form__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+.srd-gift-note-cart-form__footer button {
+    margin-right: 20px;
+}
+a,
+button {
+    cursor: pointer;
+}
+[btn-cancel] {
+    text-decoration: underline;
+}
+.srd-gift-note-cart-utility {
+    display: flex;
+    justify-content: space-between;
+}
+.srd-gift-note-cart-message {
+    font-size: 0.7em;
+}
+@media (max-width: 767.98px) {
+    .h1 {
+        font-size: 1em;
+    }
+}

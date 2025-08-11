@@ -1,0 +1,15 @@
+{%- when "c_and_r_widget" %}
+    <div class="cnr-subscription-widget pdp-main" data-product="{{ product.id }}" data-variant="{{ product.selected_or_first_available_variant.id }}" data-form="{{ block.settings.form_selector }}"></div>
+    <script>
+    const pdp_subscription = new BambooSubscriptionWidget({
+      graphql_token:"{{ settings.storefront_token }}",
+      product:{{ product.id}},
+      variant_id: {{ product.selected_or_first_available_variant.id }},
+      "injection_point":".cnr-subscription-widget.pdp-main",
+      "id":"main-widget",
+      "form_selector":`{{ block.settings.form_selector }}`,
+      subscription_label:"{{ block.settings.subscription_label }}",
+      onetime_label:"{{ block.settings.onetime_label }}",
+      default_to_subscription:{{ block.settings.default_to_subscription }}
+    })
+    </script>

@@ -1,0 +1,32 @@
+{
+    "type": "header",
+    "content": "Gift Message"
+  },
+  {
+    "type":"checkbox",
+    "id":"enable_sidecart_gift_note",
+    "label":"Enable cart gift note"
+  },
+  {
+    "type":"text",
+    "id":"sidecart_gift_note_label",
+    "label":"Sidecart Label",
+    "default":"Add a note"
+  },
+  {
+    "type":"text",
+    "id":"sidecart_gift_note_button",
+    "label":"Button text (empty note)",
+    "default":"Add a note"
+  },
+  {
+    "type":"text",
+    "id":"sidecart_gift_note_update_button",
+    "label":"Button text (update note)",
+    "default":"Update note"
+  },
+  {
+    "type":"text",
+    "id":"sidecart_gift_note_ajax_text",
+    "label":"Ajax updating text"
+  }

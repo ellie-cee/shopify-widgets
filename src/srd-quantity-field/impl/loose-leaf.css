@@ -1,0 +1,6 @@
+.srd-quantity.active .remove-this {
+    border:none;
+    background:transparent;
+    padding:0px;
+    cursor:pointer;
+  }

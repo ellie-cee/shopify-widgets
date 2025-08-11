@@ -1,0 +1,103 @@
+.rc-container[data-widget-container] {
+    display:none!important;
+}
+.srd-subscription-widget .rc_block.rc_block__type {
+  display:flex;
+  align-items: center;
+  flex-wrap:wrap;
+  padding:8px;
+}
+.srd-subscription-widget .rc_block.rc_block__type #rc_autodeliver_options {
+  flex-basis:100%;
+  display:none;
+  padding-left: 30px;
+  padding-bottom: 8px;
+}
+.rc_block.rc_block__type:has(input:checked) {
+    background: #fff;
+    color: #bb5959;
+}
+.rc_block.rc_block__type:has(input:checked) #rc_autodeliver_options {
+    background: #fff;
+  display: block;
+}
+
+div.rc_popup {
+	display: block;
+	padding: 8px;
+	white-space: nowrap
+}
+
+div.rc_block__type--active+div.rc_popup {
+	margin-top: 8px
+}
+
+.rc_popup_label_wrapper {
+	background: rgba(0, 0, 0, 0);
+	border: 0;
+	outline: 0
+}
+
+.rc_popup_label_wrapper:focus {
+	outline: .2rem solid var(--rc-active-color)
+}
+
+div.rc_popup__hover,
+a.rc_popup__hover {
+	display: inline-flex;
+	align-items: center;
+	position: relative;
+	padding-bottom: 12px;
+	cursor: pointer
+}
+
+div.rc_popup__block {
+	display: none;
+	position: absolute;
+	top: 100%;
+	cursor: default;
+	left: 0;
+	text-align: left;
+	white-space: initial;
+    z-index:300000;
+}
+
+div.rc_popup__block.active {
+	display: block
+}
+
+div.rc_popup__hover:hover .rc_popup__block,
+div.rc_popup__block:hover {
+	display: block
+}
+
+div.rc_popup__hover--mobile div.rc_popup__block:hover {
+	display: none
+}
+
+div.rc_popup__block {
+	width: 300px;
+	padding: 0
+}
+
+div.rc_popup__close {
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	font-size: 23px;
+	text-align: center;
+	line-height: 40px;
+	z-index: 300;
+	cursor: pointer;
+	font-family: arial
+}
+
+div.rc_popup__block__content a {
+	text-decoration: none
+}
+
+

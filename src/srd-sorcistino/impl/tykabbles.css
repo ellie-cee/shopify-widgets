@@ -1,0 +1,100 @@
+.sorcistino-holder {
+  min-width: 80vw;
+}
+.sorcistino-nav-holder {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px;
+}
+
+.sorcistino-holder .rebuy {
+  width:100%;
+}
+.sorcistino-holder .switch-field {
+  display: flex;
+  gap:10px;
+}
+.sorcistino-holder.gear-box .switch-field {
+  flex-direction:column;
+}
+
+@media screen and (max-width:762px) {
+  .sorcistino-holder {
+    min-width: 100vw;
+  }
+}
+
+.jdgm-prev-badge {
+    display: block!important;
+}
+
+.sorcistino-holder .content .panels {
+  display: flex;
+  gap: 24px;
+}
+.sorcistino-holder .content .panels .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+
+
+
+
+.sorcistino-holder .db-column {
+  padding: 16px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start !important;
+}
+.sorcistino-nav-button[disabled] {
+  opacity: 0;
+}
+@media screen and (max-width:762px) {
+  .sorcistino-holder .content .panels {
+    flex-direction: column;
+    justify-content:center;
+  }
+  .sorcistino-holder {
+    min-width: 100vw;
+  }
+  .sorcistino-holder .switch-field {
+    flex-direction:column;
+  }
+  .bb-panels-wrapper .container:has(.sorcistinoj) {
+    padding:0px;
+  }
+}
+.sorcistino-holder .js-switch-field label {
+    background-color: var(--foreword-lite-secondary);
+    border: 1px solid var(--foreword-lite-secondary);
+    color: var(--foreword-black);
+}
+.sorcistino-holder .js-switch-field label:hover, .sorcistino-holder .js-switch-field input[type="radio"]:checked + label {
+    background-color: #477cbf;
+    border: 1px solid #477cbf;
+    color: #fff;
+}
+.sorcistino-holder .js-switch-field input[type="radio"] {
+  display: none;
+}
+.sorcistino-holder .progress {
+  width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sorcistino-holder .progress-bar-wrapper {
+    position: relative;
+    height:22px;
+    width:100%;
+    margin:27px auto;
+    background: #fff;
+    border-radius: 30px;
+    padding:0;
+    overflow:hidden;
+    max-width:100%;
+}

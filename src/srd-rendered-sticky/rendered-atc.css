@@ -1,0 +1,160 @@
+.srd-sticky.pdp-atc .product-info {
+    display: flex;
+    gap: 8px;
+  }
+  .srd-sticky.pdp-atc .product-image img {
+    height: 72px;
+    width:auto;
+  }
+  
+  .srd-sticky.pdp-atc .product-description {
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+    margin-top:12px;
+  }
+  .srd-sticky.pdp-atc .product-name {
+    font-family: 'DM Sans';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;  
+  }
+  .srd-sticky.pdp-atc .product-price {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+  }
+  .srd-sticky.pdp-atc .pdp-sticky-atc {
+    display: flex;
+    gap:16px;
+    align-items:center;
+  }
+  
+  .sticky-pdp-select, .srd-quantity .wrapper  {
+    border: 1px solid #00000022;
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 2%;
+    padding:8px;
+    padding-right:16px;
+    background-color: transparent;
+    border-radius: 12px;
+    outline: none;
+  }
+  
+  .srd-sticky .quantity-input {
+    display:none;/* Sunny Road 2025 */
+
+
+
+    .btn.btn--primary.sticky-atc {
+        border-radius: 25px;
+        font-size: 12px;
+        padding: 2px 36px;
+        height: 39px;
+        }
+        
+        body:has(.kl-teaser-RsCvPy) .srd-sticky.pdp-atc .product-info {
+        margin-left:110px;  
+        }
+        
+        
+        .srd-sticky.pdp-atc .product-info {
+        display: flex;
+        gap: 8px;
+        }
+        .srd-sticky.pdp-atc .product-image img {
+        height: 72px;
+        width:auto;
+        }
+        
+        .srd-sticky.pdp-atc .product-description {
+        display:flex;
+        flex-direction: column;
+        gap:12px;
+        margin-top:12px;
+        }
+        .srd-sticky.pdp-atc .product-name {
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 2%;  
+        }
+        .srd-sticky.pdp-atc .product-price {
+        font-family: DM Sans;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        }
+        .srd-sticky.pdp-atc .pdp-sticky-atc {
+        display: flex;
+        gap:16px;
+        align-items:center;
+        }
+        
+        .sticky-pdp-select, .srd-quantity .wrapper  {
+        border: 1px solid #00000022;
+        font-family: DM Sans;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 2%;
+        padding:8px;
+        padding-right:16px;
+        background-color: transparent;
+        border-radius: 12px;
+        outline: none;
+        }
+        
+        .srd-sticky .quantity-input {
+        display:none;
+        }
+        .srd-sticky {
+        border-top: 1px solid #000000;
+        }
+        
+        @media screen and (max-width:762px) {
+        .srd-sticky.pdp-atc .product-info, .pdp-sticky-select-holder {
+          display: none;
+        }
+        }
+        body:has(.mobile-dock.pdp-atc.is-active) #shopify-chat {
+        display: none;
+        }
+        
+  }
+  .srd-sticky {
+    border-top: 1px solid #000000;
+  }
+  
+  @media screen and (max-width:762px) {
+    .srd-sticky.pdp-atc .product-info, .pdp-sticky-select-holder {
+      display: none;
+    }
+    body:has(#CartDrawer[active]) #shopify-chat,
+    body:has(#CartDrawer[active]) .kl-teaser-XSsezW, body:has(#CartDrawer[active]) .mobile-dock.pdp-atc.is-active {
+      display: none!important;
+    }
+     body:has(.mobile-dock.pdp-atc.is-active) .kl-teaser-XSsezW {
+      bottom:52px!important;
+    }
+    body:has(.mobile-dock.pdp-atc.is-active) #ShopifyChat {
+      bottom: 132px!important;
+    }
+  }
+  
+  @media screen and (min-width:762px) { 
+    body:has(.mobile-dock.pdp-atc.is-active) .kl-teaser-RsCvPy {
+      bottom:82px!important;
+    }
+    body:has(.mobile-dock.pdp-atc.is-active) #ShopifyChat {
+      bottom: 160px!important;
+    }
+  }

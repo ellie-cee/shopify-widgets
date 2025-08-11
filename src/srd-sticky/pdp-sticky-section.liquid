@@ -1,0 +1,64 @@
+<form class="pdp-sticky-form">
+<div class="sticky-holder">
+<mobile-dock class="mobile-dock pdp-atc mobile-dock--6-col section-sections--24117023637811__mobile-dock-padding hidden ignore-default-behaviour">
+
+<div class="srd-sticky pdp-atc">
+    <div class="dummy"></div>
+    <div class="atc-button">
+      
+      
+      <button type="submit" name="add" class="product-form__submit btn btn--primary sticky-atc">Add to cart</button>
+    </div>
+</div>
+
+</mobile-dock>
+</div>
+</form>
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded",()=>{
+    const JNCOSticky = new JncoPdpSticky({
+      "target":".product-form__submit.btn.btn--primary",
+      "sticky":".srd-sticky.pdp-atc",
+      "stickTo":"bottom",
+      "productId":{{ product.id }},
+      "variantId":"{{ product.selected_or_first_available_variant.id }}",
+      "graphql_token":"{{ settings.storefront_token }}"
+    })  
+  })
+  
+  document.querySelector(".pdp-sticky-atc").addEventListener("click",event=>{
+    let miniCart = document.querySelector("mini-cart");
+    let formData = new FormData(document.querySelector(`form[data-type="add-to-cart-form"]`));
+    let payload = {
+      id:formData.get("id"),
+      quantity:formData.get("quantity"),
+      "sections":miniCart.getSectionsToRender().map((section) => section.id),
+      "sections_url":window.location.pathname
+      
+    };
+    if (formData.get("selling_plan")) {
+      payload.selling_plan = formData.get("selling_plan");
+    }
+    new CnR().addToCart(payload).then(cart=>{
+      
+      miniCart.renderContents(cart)
+      miniCart.open()
+      window.scrollTo(0,0)
+    })
+  })
+  
+</script>
+
+{% schema %}
+  {
+    "name": "PDP Sticky",
+    "settings": [],
+    "presets":[
+      {
+        "name":"PDP Sticky"
+      }
+    ]
+  }
+{% endschema %}

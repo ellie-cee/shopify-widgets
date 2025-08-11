@@ -1,0 +1,39 @@
+/* srd-modal/srd-modal.css  */
+.srd-modal {
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: #00000088;
+    display:none;
+    z-index: 1000000000;
+    
+}
+
+.srd-modal.active {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.srd-modal .close {
+    position: absolute;
+    top:5px;
+    right:10px;
+}
+.srd-modal .modal-content {
+    margin-top:24px;
+    width: fit-content;
+    min-width:60%;
+    max-width: 75%;
+    min-height:33%;
+    padding:24px;
+    background-color:#ffff;
+    position: relative;
+    padding:0px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

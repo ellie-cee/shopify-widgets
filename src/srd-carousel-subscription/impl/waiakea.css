@@ -1,0 +1,19 @@
+.srd-carousel-subscriptions {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+}
+.srd-carousel-subscriptions input:checked+label {
+    background-color: var(--dark_blue);
+    color: #fff;
+}
+.srd-carousel-subscriptions label {
+    background-color: transparent;
+    border: 2px solid var(--dark_blue);
+    border-radius: 0;
+    color: var(--dark_blue);
+    font-size: 12px;
+    letter-spacing: .08em;
+    margin: 0;
+    padding: 9px;
+}

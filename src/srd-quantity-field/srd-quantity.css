@@ -1,0 +1,47 @@
+.srd-quantity input[type=number] {
+  appearance:inherit;
+  -moz-appearance: textfield;
+  width:3em;
+  border: none;
+text-align:center;
+}
+.srd-quantity input[type=number] {
+
+border:none!important;    
+
+}
+
+.srd-quantity .minus,.srd-quantity .plus {
+  width:16px;
+  padding:2px;
+  cursor:pointer;
+  text-align:center;
+}
+
+.srd-quantity {
+  display:flex;
+  flex-direction: row;
+  gap:4px;
+  align-items:flex-end;
+}
+
+.srd-quantity:has(input::disabled) {
+opacity:0.5;
+}
+
+
+.srd-quantity .wrapper {
+border:1px solid #000000;
+display:flex;
+gap:4px;
+align-items: center;
+border-radius: 5px;
+}
+
+.srd-quantity .extra {
+display:none;
+}
+
+.srd-quantity.active .extra {
+  display:inline;
+}

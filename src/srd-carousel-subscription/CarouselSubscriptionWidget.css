@@ -1,0 +1,8 @@
+.srd-carousel-subscriptions .plan-radio {
+    display: none;
+}
+.srd-carousel-subscriptions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}

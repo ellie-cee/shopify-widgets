@@ -1,0 +1,13 @@
+.com-add-note {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.com-add-note h2 {
+    font-size:inherit;
+}
+.com-add-note .buttons {
+    display:flex;
+    gap:24;
+    justify-content: space-around;
+}

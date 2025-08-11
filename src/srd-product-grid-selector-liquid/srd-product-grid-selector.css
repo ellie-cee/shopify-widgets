@@ -1,0 +1,44 @@
+.srd-product-grid-selector {
+    
+    margin-bottom: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid var(--foreword-primary);
+    background: transparent;
+    background-image: url(https://cdn.shopify.com/s/files/1/2113/5975/files/carat.svg?v=1712178506);
+    background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 17px;
+    color: var(--foreword-primary) !important;
+}
+.srd-product-grid-selector .header {
+  text-align:left;
+  padding: 12px 16px;
+}
+.srd-product-grid-selector .options-holder {
+  display: none;
+  position:relative;
+}
+.srd-product-grid-selector.active .options-holder {
+  display: block;
+}
+.srd-product-grid-selector .options {
+  position: absolute;
+  top:0px;
+  background:#ffffff;
+  width:max-content;
+}
+.srd-product-grid-selector .option-item {
+  padding: 12px 16px;
+  text-wrap: nowrap;
+}
+.srd-product-grid-selector .option-item.disabled {
+  pointer-events:none;
+  color:#aaaaaa;
+}
+.srd-product-grid-selector .option-item:hover {
+  color:#ffffff;
+  background:#0c67b3;
+}
+
+

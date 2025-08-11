@@ -1,0 +1,38 @@
+.cr-upgrade-to-subscription-widget-select {
+    display: flex;
+    background: transparent;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='black' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 1.5rem;
+    background-position: right 1.1rem top 50%;
+  }
+  .cr-upgrade-to-subscription-widget-select optgroup {
+    background-color: #f2ece5;
+    text-align: left;
+    
+  }
+  .cr-upgrade-to-subscription-widget-select option {
+    display:flex;
+    justify-content:center;
+    background-color: #fff;
+    text-align:center;
+  }
+  .cr-upgrade-to-subscription-widget-select,.cr-upgrade-to-subscription-widget-button,.cr_upgrade_to_selection_widget-notification {
+    margin:16px 16px 16px 16px;
+    height: 45px;
+    width:100%;
+    text-align: center;
+    border: 1px solid #B0B0B0;
+    border-radius: 8px;
+    font-family: "AvenirBlack",sans-serif!important;
+    background-color:#fff;
+    color:#1e1e1e;
+    text-transform: uppercase;
+  }
+  .cr_upgrade_to_selection_widget-notification { 
+    display:flex;
+    justify-content:center;
+    align-items: center;
+  }
+  

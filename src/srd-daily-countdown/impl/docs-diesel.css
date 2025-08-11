@@ -1,0 +1,113 @@
+.shipping-notice__info  {
+    color: #ffffff;
+    font-family: 'peridot-pe-variable', sans-serif;
+    font-size:12px;
+  }
+@media only screen and (max-width: 767px){
+  .shipping-notice .shipping-notice__info .shipping-notice__info-icon svg {
+      width: 19px !important;
+      height: 19px !important;
+  }
+  .srd-shipping-countdown-mobile .nav-user-shipping .shipping-notice {
+    display: flex;
+    flex-direction: row;
+    gap:8px;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+}
+.srd-shipping-countdown {
+  position: absolute;
+  right:16px;
+  top:10%;
+  min-width:150px;
+  max-width:175px;
+
+}
+.shipping-notice .shipping-notice__info > div {
+  font-family: 'peridot-pe-variable', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  user-select: none;
+  text-align: left;
+}
+.shipping-notice .shipping-notice__title {
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  text-align:center;
+  padding:8px;
+}
+.shipping-notice__title.expired {
+font-family: 'peridot-pe-variable', sans-serif;
+font-size:14px;
+}
+
+@media screen and (min-width: 768px) {
+  .shipping-notice .shipping-notice__info {
+      margin: 0 auto;
+      padding: 11px 36px 11px 20px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .nav-user-shipping {
+      /* display: none !important; */
+  }
+}
+
+@media screen and (min-width: 992px) {
+   .nav-user-shipping {
+      font-family: "Anton";
+      margin-left: 13px;
+  }
+
+  .nav-user-shipping .shipping-notice {
+      border: 1px solid #af3939;
+      text-align: center;
+  }
+
+  .nav-user-shipping .shipping-notice .shipping-notice__title {
+      background-color: #af3939;
+      color: #ffffff;
+      padding: 8px;
+  }
+
+  header nav .nav-user-shipping .shipping-notice .shipping-notice__title span {
+      font-family: "Anton", sans-serif;
+      color: #fff;
+      background-color: #000;
+      font-size: 24px;
+      padding: 0 5px 1px;
+      user-select: none;
+      display: block;
+  }
+
+  .shipping-notice .shipping-notice__info {
+      padding: 6px;
+  }
+
+   .shipping-notice__info-icon {
+      cursor: pointer;
+  }
+
+  .shipping-notice .shipping-notice__info span {
+      font-family: 'peridot-pe-variable', sans-serif;
+  color: #fff;
+      font-size: 11px;
+      user-select: none;
+  }
+}
+.shipping-notice .info {
+  display:flex;
+  align-items:center;
+  gap:4px;
+  justify-content: space-between;
+  align-content:center;
+  margin-right:8px;
+}
+#navigation-content {
+position:relative;
+}

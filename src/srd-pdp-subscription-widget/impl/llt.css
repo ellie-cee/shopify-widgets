@@ -1,0 +1,93 @@
+.srd-subscription-widget {
+    margin: 16px 0px;
+  }
+  .srd-subscription-widget  #rc_autodeliver_options {
+    display:none!important;
+  }
+  .srd-subscription-widget  #rc_radio_options {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap:0;
+  }
+  .srd-subscription-widget .rc_radio {
+    display:none;
+  }
+  .srd-subscription-widget .rc_price {
+    display:block;
+    text-align:center;
+    font-weight:900;
+    font-size:1.35em
+  }
+  
+  .srd-subscription-widget .rc_block {
+      color: var(--blue);
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid #00dade;
+      border-radius: 10px;
+      padding: 27px 18px;
+      text-align: center;
+      width: 50%;
+      transition: .2s background-color, color cubic-bezier(.4,0,.2,1);
+  }
+  .srd-subscription-widget .rc_block:last-child {
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+  }
+  .srd-subscription-widget .rc_block:first-child {
+    border-top-left-radius:0px;
+    border-bottom-left-radius:0px;
+    
+  }
+  .srd-subscription-widget .rc_block:has(input:checked) {
+    color: #00249c;
+    background: #00dade;
+  }
+  .srd-subscription-widget .rc-subscription-details {
+    position:relative;
+  }
+  .srd-subscription-widget .rc-subscription-details button {
+    border:none;
+    background:transparent;
+    cursor:pointer;
+  }
+  .srd-subscription-widget .rc-tooltip {
+      position: absolute;
+      width: 100%;
+      z-index: 10000000;
+      font-size: 12px;
+      max-width: 300px;
+      box-shadow: 0 0 1px 0 var(--rc-details-icon-color);
+      top: 24px;
+      display: none;
+  }
+  .srd-subscription-widget .rc-tooltip.active {
+      display:block;
+  }
+  .srd-subscription-widget .rc-tooltip__content {
+    background:#d6d6d6;
+    color: #ffffff;
+    padding:8px;
+  }
+  .srd-subscription-widget .recharge-badge {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-radius: 20px;
+      background: #fff;
+      width: fit-content;
+      padding: 4px 8px;
+      height: 32px;
+      gap:8px;
+      text-decoration:none;
+  }
+  .srd-subscription-widget .rc-tooltip__footer {
+      margin: 8px;
+      padding: 8px 0px;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .srd-subscription-widget .rc-tooltip__footer svg {
+    height: 24px;
+  }

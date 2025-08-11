@@ -1,0 +1,79 @@
+/* swatches */
+.srd-swatches {
+    display: flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .srd-swatches label {
+    cursor:pointer;
+  }
+  .srd-swatches input[type="radio"] {
+    display:none;
+  }
+  .srd-swatch-set.buttons fieldset {
+    display: grid;
+    width:100%;
+     grid-template-columns: repeat(auto-fill, minmax(min(75px, 100%), 1fr));
+   }
+  .srd-swatches-option-field-button label {
+    display: block;
+    font-size: inherit;
+    line-height: 1.3;
+    position: relative;
+    margin: 0;
+    padding: 10px 20px;
+    color: #000;
+    background-color: #f7f6f4;
+    border: 1px solid #d3d3d3;
+    border-radius: 0px;
+    text-align: center;
+    transition: color .3s ease, background .3s ease, border .3s ease;
+  }
+  .srd-swatches-option-field-swatch label { 
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 32px;
+      height: 32px;
+      margin: 0;
+      border-radius: 100%;
+      color: #000000;
+      background: #cccccc;
+      display:block;
+      border:1px solid #888888;
+  }
+  
+  .srd-swatches-option-field-swatch .swatch-label {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  .srd-swatches-option-field-swatch .swatch-label .icon-check {
+      display: none;
+      width: 16px;
+      margin-right: 2px;
+      opacity: 0;
+      transition: opacity .2s ease, visibility 0s linear .2s;
+      fill: var(--white);
+  }
+  .srd-swatches-option-field-swatch input:checked ~ .swatch-label .icon-check {
+    display: block;
+    opacity:100;
+  }
+  
+  .srd-swatches-option-field-button label:hover, .srd-swatches-option-field-button input:checked ~ .radio-label {
+    background-color: #000;
+    color: #f7f6f4;
+  
+  }
+  
+  .srd-swatches fieldset {
+    border:none!important;
+    padding:0px!important;
+    display:flex;
+    gap:8px;
+    
+  }
+  .srd-swatches fieldset legend {
+    display:none!important;
+  }

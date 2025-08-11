@@ -1,0 +1,3 @@
+class RedBarnSubscriptionWidget extends SrDSubscriptionsWidget {
+    
+}

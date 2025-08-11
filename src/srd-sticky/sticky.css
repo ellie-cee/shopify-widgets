@@ -1,0 +1,148 @@
+.srd-sticky {
+    display:none;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background: #ffffff;
+  
+  }
+  .srd-sticky.pdp-atc {
+  background: #ffffff;
+  padding-bottom:2px;
+  animation-duration: 0.5s;
+  animation-name: fadeOut;
+  }
+  .mobile-dock.pdp-atc.is-active {
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
+  }
+  
+  .srd-sticky.active {
+    display:flex;
+    width: 100vw;
+  }
+  
+  .mobile-dock {
+    display: flex;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 1s ease;
+    background: #fff;
+    background-color: #888;
+  
+    
+  }
+  mobile-dock.pdp-atc {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-name: fadeOut;
+  }
+  mobile-dock.pdp-atc.is-active {
+  opacity: 1;
+  animation-duration: 0.5s;
+  animation-name: fadeIn;
+  }
+  
+  @media screen and (min-width:762px) {
+  .srd-sticky.pdp-atc {
+   
+    justify-content:space-between;
+    width:100%;
+    display:flex;
+    padding:5px;
+     
+  }
+  
+  
+  .srd-sticky.active {
+      display:flex;
+      width: 100vw;
+     
+      background-color:#4d624b;
+  }
+  .mobile-dock.pdp-atc.is-active {
+    display: flex!important;
+     animation-duration: 0.5s;
+      animation-name: fadeIn;
+    
+     padding: 0px;
+   
+  }
+  .mobile-dock.pdp-atc {
+    overflow: visible;
+    display: flex!important;
+   animation-name: fadeOut;
+    animation-duration: 0.5s;
+    
+  }
+  .mobile-dock.pdp-atc .dummy {
+    flex-grow:1;
+  }
+  }
+  button.pdp-sticky-atc {
+   background-color: #fff8ed!important;
+   color:#4d624b!important;
+  
+  }
+  
+  
+  @media screen and (max-width:762px) {
+  .srd-sticky.pdp-atc {
+      overflow:visible;
+      transform:translateY(-49);
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding: 8px;
+    
+      
+  
+      
+  }
+  .mobile-dock.pdp-atc.is-active {
+    display: flex!important;
+    transition: transform 0.25s ease;
+    
+     padding: 0px;
+    animation-duration: 0.5s;
+    animation-name: fadeIn;
+  }
+  mobile-dock.pdp-atc {
+    overflow: visible;
+    display: flex!important;
+    transition: transform 0.25s ease;
+    z-index:1000;
+   animation-duration: 0.5s;
+  animation-name: fadeOut;
+  }
+  
+  
+  }
+  
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+    }
+    100% {   
+        opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    1% {   
+        opacity: 1;
+    }
+    100% {   
+        opacity: 0;
+    }
+  }

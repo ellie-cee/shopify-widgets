@@ -1,0 +1,29 @@
+{
+    "type":"header",
+    "content":"Upgrade to Subscription"
+  },
+  {
+    "type":"text",
+    "id":"sc_upgrade_text",
+    "label":"Upgrade Text"
+  },
+  {
+    "type":"text",
+    "id":"sc_downgrade_text",
+    "label":"Downgrading Text"
+  },
+  {
+    "type":"text",
+    "id":"sc_upgrading_text",
+    "label":"Upgrading Text"
+  },
+  {
+    "type":"text",
+    "id":"sc_updating_text",
+    "label":"Updating Subscription Text"
+  },
+  {
+    "type":"text",
+    "id":"sc_onetime_text",
+    "label":"One-time text"
+  }

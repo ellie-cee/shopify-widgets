@@ -1,0 +1,56 @@
+
+
+
+
+
+/* google maps */
+
+.google-maps-fence-selector {
+    display: flex;
+    gap: 10px;
+    margin:8px;
+  }
+  
+  .google-maps-gate-icon {
+    
+    background-color: #00000033;
+    border-radius: 20px;
+    padding:2px;
+  }
+  
+  .google-maps-howto {
+    display:flex;
+    flex-direction:column;
+    font-size:18px;
+    max-height:400px;
+    overflow-y: scroll;
+  }
+  
+  .google-maps-howto .section-header {
+    font-family: neue-aachen-pro, sans-serif;
+    margin:0px 10px
+  }
+  .google-maps-howto .legend {
+    margin:20px 8px;
+    display:flex;
+    flex-direction: column;
+    gap:8px;
+  }
+  .google-maps-howto .legend-row {
+    display:flex;
+    justify-content: space-between;
+    gap:10px;
+  }
+  .google-maps-howto .legend-image {
+    width:64px;
+    display: flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+  }
+  .google-maps-howto .legend-text {
+    max-width: 75%;
+  }
+  .google-maps-howto .howto-body {
+    padding:8px;
+  }
